@@ -55,43 +55,42 @@
       </div>
     </section>
 
-    <section class="flex section2 h-auto py-8 ">
-      <div class="flex">
-        <div class="left relative w-full h-full bg-cover bg-center px-6 w-full">
-          <img
-            src="/public/assets/images/mitski-album.png"
-            alt=""
-            class="h-4/6 w-4/6"
-          />
-        </div>
+   <section class="flex section2 h-auto py-8">
+  <div class="flex flex-col sm:flex-row">
+    <!-- Left Section with Image -->
+    <div class="left relative w-full sm:w-2/3 h-full bg-cover bg-center px-6">
+      <img
+        src="/public/assets/images/mitski-album.png"
+        alt="Mitski Album"
+        class="max-w-full h-auto rounded-lg"
+      />
+    </div>
 
-        <div class="right w-1/3 h-full flex flex-col  px-4">
-          <h2
-            class="uppercase text-[#b0c4de] font-bold text-4xl sm:text-2xl md:text-4xl"
-          >
-            tracklist
-          </h2>
-          <ul class="space-y-4 text-2xl">
-            <li>1. Bug Like an angel</li>
-            <li>2. Buffalo Replaced</li>
-            <li>3. Heaven</li>
-            <li>4. I Don't Like My Mind</li>
-            <li>5. The Deal</li>
-            <li>6. When Memories Snow</li>
-            <li>7. My Love Mine All Mine</li>
-            <li>8. The Frost</li>
-            <li>9. Star</li>
-            <li>10. I'm Your Man</li>
-            <li>11. I Love Me After You</li>
-          </ul>
+    <!-- Right Section with Tracklist -->
+    <div class="right w-full sm:w-1/3 h-full flex flex-col items-start px-6 space-y-8">
+      <h2 class="uppercase text-[#b0c4de] font-bold text-4xl sm:text-3xl text-center sm:text-left">
+        tracklist
+      </h2>
+      <ul class="space-y-6 sm:text-xl text-lg">
+        <!-- List of Tracks -->
+         <div class="first">
+            <li><iframe class="rounded-lg" src="https://open.spotify.com/embed/track/45KMdPDdZTxcXW3lw10R70" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li><iframe class="rounded-lg" src="https://open.spotify.com/embed/track/06m6Q2ZUHNsHGEHK9m8hLf" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li><iframe class="rounded-lg" src="https://open.spotify.com/embed/track/5T00EN4oZmDQx3hqVAC4Fx" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li><iframe class="rounded-lg" src="https://open.spotify.com/embed/track/1l0BBsLElenQWul8Fn8tT1" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
+        <li><iframe class="rounded-lg" src="https://open.spotify.com/embed/track/0CNJcM33kvWE8v26wBy9wB" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
 
-          <button
-            class="mt-4 uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-5 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] cta"
-          >
-            listen
-          </button>
-        </div>
-      </div>
-    </section>
+         </div>
+        
+        <!-- Additional Tracks -->
+      </ul>
+
+      <button class="mt-8 uppercase transition duration-300 w-[12rem] text-[#ff6e00] hover:text-white bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+        listen
+      </button>
+    </div>
+  </div>
+</section>
+
   </body>
 </html>
