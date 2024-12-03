@@ -13,13 +13,13 @@
   </head>
   <body>
     <header>
-        <nav class=" flex justify-between font-bold p-6 text-base">
+        <nav class="bg-black fixed top-0 left-0 z-50 w-full flex justify-between  font-bold p-6 text-base ">
         <div>
           <img src="/public/assets/images/logo.png" alt="mitski-logo"/>
         </div>
 
         <ul class="uppercase flex gap-8 text-white">
-          <li><a href="">tour</a></li>
+          <li><a href="#tour">tour</a></li>
           <li><a href="">store</a></li>
           <li><a href="">listen</a></li>
           <li><a href="">videos</a></li>
@@ -35,7 +35,7 @@
 
     </header>
     
-    <section class="section1">
+    <section class="section1 bg-[url('/public/assets/images/mitski-header.png')]">
       
 
       <div class="hero uppercase relative w-full h-screen ml-10">
@@ -152,6 +152,116 @@
       </a>
     </div>
   </div>
+</section>
+
+
+<section class="bg-black w-full flex justify-center">
+  <div class="w-[95%] h-[95%] p-10 image-container relative">
+    <img src="/public/assets/images/mitski-star.png" alt="" class="flex items-center justify-center w-full rounded-xl">
+    <div class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
+       <i class="fa-solid fa-play text-4xl text-black"></i>
+       <!-- <h2 class="uppercase">star</h2> -->
+    </div>
+    <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
+      <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">star</h3>
+    </div>
+   
+  </div>
+  
+</section>
+
+<section class="flex flex-col justify-center items-center p-10 bg-black space-y-10">
+  <div class="w-full flex flex-col">
+    <h2 class="text-4xl uppercase text-[#b0c4de] font-bold">mitski store</h2>
+  
+    <a href="" class="hover:shadow-md text-center mt-8 uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+      shop
+    </a>
+  </div>
+  
+ 
+
+  <!-- merch -->
+   
+    <ul class="flex gap-4 mt-3 ">
+      <li class="bg-white relative p-4 flex flex-col">
+        <img src="/public/assets/merch/black-tee.png" alt="">
+        <p class="uppercase text-[#ff6e00] font-bold">2024 tour tee</p>
+      </li>
+      <li class="bg-white relative p-4 flex flex-col">
+        <img src="/public/assets/merch/black-cap.png" alt="">
+        <p class="uppercase  text-[#ff6e00] font-bold">listening to mitski hat</p>
+      </li>
+      <li class="bg-white relative p-4 flex flex-col">
+        <img src="/public/assets/merch/black-hoodie.png" alt="">
+        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">2024 tour hoodie</p>
+      </li>
+      <li class="bg-white relative flex flex-col p-4">
+        <img src="/public/assets/merch/pink-tee.png" alt="">
+        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">2024 tour tee(web exclusive)</p>
+      </li>
+      <li class="bg-white relative p-4 flex flex-col">
+        <img src="/public/assets/merch/vinyl.png" alt="">
+        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">the land is inhospitable and so are we vinyl(pink aster)</p>
+      </li>
+    </ul>
+   
+
+   <!-- upcoming tour dates -->
+    <div id="tour" class="flex justify-center items-center flex-col w-1/2 space-y-4">
+      <h2 class="uppercase text-4xl text-[#b0c4de] font-bold">upcoming tour dates</h2>
+      <div class="flex flex-wrap">
+        <p class="font-regular text-lg text-center leading-relaxed">
+          Join a waitlist below to receive first notice when more tickets become available. 
+          The Mitski <br> Team is working with show promoters regularly to cancel scalped tickets.
+           Limited Tickets <br> means all face value tickets are sold out.
+        </p>
+      </div>
+    </div>
+
+    <!-- no upcoming events -->
+     <div class="flex  w-full">
+      <p class="items-start text-lg">There are no upcoming events.</p>
+     </div>
+
+     <!-- hr -->
+      
+      <hr class="border-[#ff6e00] w-full font-bold border-2 rounded-md">
+
+      <!-- get notified -->
+       <div class="w-full flex-col flex items-center justify-center">
+        <h6 class="uppercase text-wrap text-2xl font-bold text-[#b0c4de] items-center text-center">
+          Get notified when new events are <br> announced in your area
+        </h6>
+
+        <a href="" class="text-center hover:shadow-md text-black mt-8 uppercase transition duration-300 w-2/6  hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+          follow mitski
+        </a>
+       </div>
+</section>
+
+<section class="bg-black w-full flex flex-col justify-center items-center">
+  <div class="w-[95%] h-[95%] p-10 image-container relative">
+    <img src="/public/assets/images/mitski-my_love.png" alt="Mitski - My Love Mine All Mine" class="flex items-center justify-center w-full rounded-xl">
+    <div class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
+       <i class="fa-solid fa-play text-4xl text-black"></i>
+       <!-- <h2 class="uppercase">star</h2> -->
+    </div>
+    <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
+      <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">my love mine all mine</h3>
+    </div>
+   
+  </div>
+  
+  <a href="" class="text-center items-center mb-6 text-black mt-2 uppercase transition duration-300 w-full sm:w-1/2 md:w-1/4 hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-6 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+  view more videos
+</a>
+
+</section>
+
+
+<section class="bg-[#ff6e00] h-screen">
+
 </section>
 
   </body>

@@ -7,7 +7,7 @@ section{
     color: white;
 }
 body{
-    background-image: url('/public/assets/images/mitski-header.png'); 
+    /* background-image: url('/public/assets/images/mitski-header.png');  */
   background-repeat: no-repeat; 
   background-size: cover;
 }
@@ -35,17 +35,7 @@ button.cta:hover {
   color: #fff;
 }
 
-/* @media (max-width: 768px) {
-  .right {
-    padding: 1rem;
-  }
-  .right ul {
-    padding: 0;
-  }
-  iframe {
-    height: 80px;
-  }
-} */
+
 
 
 .hero {
