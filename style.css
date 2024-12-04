@@ -45,5 +45,19 @@ button.cta:hover {
 }
 
 
+#slider {
+  scroll-behavior: smooth;
+}
+.relative.overflow-hidden {
+    width: 100%; /* Full container width */
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+
+
+
+
+
+
 
 

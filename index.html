@@ -1,268 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mitski's Official Website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/d498033423.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <header>
-        <nav class="bg-black fixed top-0 left-0 z-50 w-full flex justify-between  font-bold p-6 text-base ">
-        <div>
-          <img src="/public/assets/images/logo.png" alt="mitski-logo"/>
-        </div>
 
-        <ul class="uppercase flex gap-8 text-white">
-          <li><a href="#tour">tour</a></li>
-          <li><a href="">store</a></li>
-          <li><a href="">listen</a></li>
-          <li><a href="">videos</a></li>
-          <li><a href="">contact</a></li>
-          <li><a href="">sign up</a></li>
-          <li><a href="">follow</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitski's Official Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+  <script src="https://kit.fontawesome.com/d498033423.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="bg-black fixed top-0 left-0 z-50 w-full flex justify-between  font-bold p-6 text-base ">
+      <div>
+        <img src="/public/assets/images/logo.png" alt="mitski-logo" />
+      </div>
+
+      <ul class="uppercase flex gap-8 text-white">
+        <li><a href="#tour">tour</a></li>
+        <li><a href="">store</a></li>
+        <li><a href="">listen</a></li>
+        <li><a href="">videos</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">sign up</a></li>
+        <li><a href="">follow</a></li>
+      </ul>
+
+      <div>
+        <i class="fa-regular fa-user text-[#ff6e00] text-2xl"></i>
+      </div>
+    </nav>
+
+  </header>
+
+  <section class="section1 bg-[url('/public/assets/images/mitski-header.png')]">
+
+
+    <div class="hero uppercase relative w-full h-screen ml-10">
+      <div class="hero-content absolute bottom-4 left-4">
+        <h4 class="tagline font-bold mb-2.5 text-[#ff6e00]">out now</h4>
+        <p class="headline mb-4 text-[#b0c4de] font-bold text-4xl sm:text-2xl md:text-4xl">
+          The Land Is Inhospitable and so are we
+        </p>
+        <button
+          class="uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-5 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] cta">
+          listen
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex max-w-full section2 h-auto py-4">
+    <div class="flex flex-col sm:flex-row items-center">
+      <!-- Left Section with Image -->
+      <div class="left relative w-full sm:w-[65%] h-full bg-cover bg-center px-4">
+        <img src="/public/assets/images/mitski-album.png" alt="Mitski Album" class="w-[70%] h-auto rounded-lg" />
+      </div>
+
+      <!-- Right Section with Tracklist -->
+      <div class="right w-full sm:w-[35%] h-full flex flex-col px-4 space-y-4">
+        <h2 class="uppercase text-[#b0c4de] font-bold text-4xl sm:text-3xl text-center sm:text-left">
+          tracklist
+        </h2>
+        <ul class="grid grid-cols-2 gap-6 sm:text-lg text-base">
+          <!-- Left Column -->
+          <div class="first space-y-4">
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/45KMdPDdZTxcXW3lw10R70" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/06m6Q2ZUHNsHGEHK9m8hLf" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/5T00EN4oZmDQx3hqVAC4Fx" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/1l0BBsLElenQWul8Fn8tT1" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/0CNJcM33kvWE8v26wBy9wB" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+          </div>
+
+          <!-- Right Column -->
+          <div class="second space-y-4">
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/3vkCueOmm7xQDoJ17W1Pm3" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/41nIJErYY9goKvnCyG7ov6" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/5ijSUALHfNot7KSafyLI4E" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/6YO2dalWyZSobXSY3UUPv9" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+            <li>
+              <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/55Y5p2XyPaYBPGtzj1f9fE" width="100%"
+                height="100" frameborder="0"
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+            </li>
+          </div>
+
+        </ul>
+        <ul>
+          <li><iframe class="rounded-lg"
+              src="https://open.spotify.com/embed/track/0QzJS1fQv5l0s1mqKTECRX?utm_source=generator&theme=0"
+              width="100%" height="152" frameBorder="0" allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"></iframe></li>
         </ul>
 
-        <div>
-          <i class="fa-regular fa-user text-[#ff6e00] text-2xl"></i>
-        </div>
-      </nav>
 
-    </header>
-    
-    <section class="section1 bg-[url('/public/assets/images/mitski-header.png')]">
-      
-
-      <div class="hero uppercase relative w-full h-screen ml-10">
-        <div class="hero-content absolute bottom-4 left-4">
-          <h4 class="tagline font-bold mb-2.5 text-[#ff6e00]">out now</h4>
-          <p
-            class="headline mb-4 text-[#b0c4de] font-bold text-4xl sm:text-2xl md:text-4xl"
-          >
-            The Land Is Inhospitable and so are we
-          </p>
-          <button
-            class="uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-5 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] cta"
-          >
-            listen
-          </button>
-        </div>
+        <a href="https://mitski.lnk.to/TLIIASAW"
+          class="text-center mt-8 uppercase transition duration-300 w-[12rem] text-[#ff6e00] hover:text-white bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+          listen
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-   <section class="flex max-w-full section2 h-auto py-4">
-  <div class="flex flex-col sm:flex-row items-center">
-    <!-- Left Section with Image -->
-    <div class="left relative w-full sm:w-[65%] h-full bg-cover bg-center px-4">
-      <img
-        src="/public/assets/images/mitski-album.png"
-        alt="Mitski Album"
-        class="w-[70%] h-auto rounded-lg"
-      />
+
+  <section class="bg-black w-full flex justify-center ">
+    <div class="w-[95%] h-[95%] p-10 image-container relative">
+      <img src="/public/assets/images/mitski-star.png" alt=""
+        class="flex items-center justify-center w-full rounded-xl">
+      <div
+        class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
+        <i class="fa-solid fa-play text-4xl text-black"></i>
+        <!-- <h2 class="uppercase">star</h2> -->
+      </div>
+      <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
+        <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">star</h3>
+      </div>
+
     </div>
 
-    <!-- Right Section with Tracklist -->
-    <div class="right w-full sm:w-[35%] h-full flex flex-col px-4 space-y-4">
-      <h2 class="uppercase text-[#b0c4de] font-bold text-4xl sm:text-3xl text-center sm:text-left">
-        tracklist
-      </h2>
-      <ul class="grid grid-cols-2 gap-6 sm:text-lg text-base">
-  <!-- Left Column -->
-  <div class="first space-y-4">
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/45KMdPDdZTxcXW3lw10R70" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/06m6Q2ZUHNsHGEHK9m8hLf" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/5T00EN4oZmDQx3hqVAC4Fx" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/1l0BBsLElenQWul8Fn8tT1" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/0CNJcM33kvWE8v26wBy9wB" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-  </div>
+  </section>
 
-  <!-- Right Column -->
-  <div class="second space-y-4">
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/3vkCueOmm7xQDoJ17W1Pm3" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/41nIJErYY9goKvnCyG7ov6" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/5ijSUALHfNot7KSafyLI4E" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/6YO2dalWyZSobXSY3UUPv9" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-    <li>
-      <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/55Y5p2XyPaYBPGtzj1f9fE" 
-              width="100%" height="100" frameborder="0" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-              loading="lazy"></iframe>
-    </li>
-  </div>
-  
-</ul>
-<ul>
-    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0QzJS1fQv5l0s1mqKTECRX?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></li>
-  </ul>
+  <section class=" flex flex-col relative justify-center items-center p-10 bg-black space-y-10">
+    <div class="w-full flex flex-col">
+      <h2 class="text-4xl uppercase text-[#b0c4de] font-bold">mitski store</h2>
 
-
-      <a href="https://mitski.lnk.to/TLIIASAW" 
-         class="text-center mt-8 uppercase transition duration-300 w-[12rem] text-[#ff6e00] hover:text-white bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
-        listen
+      <a href=""
+        class="hover:shadow-md text-center mt-8 uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+        shop
       </a>
     </div>
-  </div>
-</section>
 
 
-<section class="bg-black w-full flex justify-center">
-  <div class="w-[95%] h-[95%] p-10 image-container relative">
-    <img src="/public/assets/images/mitski-star.png" alt="" class="flex items-center justify-center w-full rounded-xl">
-    <div class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
-       <i class="fa-solid fa-play text-4xl text-black"></i>
-       <!-- <h2 class="uppercase">star</h2> -->
+
+    <!-- merch -->
+    <div class="relative overflow-hidden w-full">
+
+
+      <ul class="flex gap-4 mt-3 transition-transform duration-500 overflow-hidden" id="slider">
+        <li
+          class="bg-[#fff6ec] relative p-4 flex flex-col group shadow-lg rounded-lg hover:shadow-2xl transition-shadow w-[25%]">
+          <img src="/public/assets/merch/black-tee.png" alt="" class="hover:scale-110 duration-300 transition-all">
+
+          <div class="flex justify-between items-center mt-2">
+            <p class="uppercase text-[#ff6e00] font-bold">2024 tour tee</p>
+            <a href="/merch.html"
+              class="bg-[#ff6e00] rounded-full p-4 flex justify-center items-center w-8 h-8 transform transition-all opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 duration-300">
+              <i class="fa-solid fa-angle-right"></i>
+          </a>
+          </div>
+        </li>
+
+        <li
+          class="bg-[#fff6ec] relative p-4 flex flex-col group shadow-lg rounded-lg hover:shadow-2xl transition-shadow w-[25%]">
+          <img src="/public/assets/merch/black-cap.png" alt="" class="hover:scale-110 duration-300 transition-all">
+          <div class="flex justify-between items-center mt-2">
+            <p class="uppercase  text-[#ff6e00] font-bold">listening to mitski hat</p>
+            <button
+              class="bg-[#ff6e00] rounded-full p-4 flex justify-center items-center w-8 h-8 transform transition-all opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 duration-300 ">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+
+          </div>
+
+        </li>
+
+        <li
+          class="bg-[#fff6ec] relative p-4 flex flex-col group shadow-lg rounded-lg hover:shadow-2xl transition-shadow w-[25%]">
+          <img src="/public/assets/merch/black-hoodie.png" alt="" class="hover:scale-110 duration-300 transition-all">
+
+          <div class="flex justify-between items-center mt-2">
+            <p class="uppercase text-[#ff6e00] font-bold">2024 tour hoodie</p>
+            <button
+              class="bg-[#ff6e00] rounded-full p-4 flex justify-center items-center w-8 h-8 transform transition-all opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 duration-300 ">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+        </li>
+
+        <li
+          class="bg-[#fff6ec] relative flex flex-col p-4 group shadow-lg rounded-lg hover:shadow-2xl transition-shadow w-[25%]">
+          <img src="/public/assets/merch/pink-tee.png" alt="" class="hover:scale-110 duration-300 transition-all">
+
+          <div class="flex justify-between items-center mt-2">
+            <p class="uppercase text-[#ff6e00] font-bold">2024 tour tee(web exclusive)</p>
+            <button
+              class="bg-[#ff6e00] rounded-full p-4 flex justify-center items-center w-8 h-8 transform transition-all opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 duration-300 ">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+        </li>
+
+        <li
+          class="hidden bg-[#fff6ec] relative p-4 flex flex-col group shadow-lg rounded-lg hover:shadow-2xl transition-shadow w-[25%]">
+          <img src="/public/assets/merch/vinyl.png" alt=""
+            class="transform group-hover:scale-110 transition-transform duration-300">
+
+          <div class="flex justify-between items-center mt-2">
+            <p class="uppercase text-[#ff6e00] font-bold leading-snug ">
+              The land is <br> inhospitable and so <br> are we vinyl (pink aster)
+            </p>
+
+            <button
+              class="bg-[#ff6e00] rounded-full p-4 flex justify-center items-center w-8 h-8 transform transition-all opacity-0 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2 duration-300 ">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+          </div>
+
+
+        </li>
+
+
+        
+      </ul>
+
+
+      <!-- navigation buttons -->
+      <button id="prev"
+        class="flex justify-center items-center absolute top-1/2 left-0  z-10  bg-[#ff6e00] p-4 w-10 h-10 transform -translate-y-1/2 rounded-full">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button id="next"
+        class="flex justify-center items-center absolute top-1/2 right-0 z-10 bg-[#ff6e00] p-4 w-10 h-10 transform -translate-y-1/2 rounded-full">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+
     </div>
-    <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
-      <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">star</h3>
-    </div>
-   
-  </div>
-  
-</section>
+  </section>
 
-<section class="flex flex-col justify-center items-center p-10 bg-black space-y-10">
-  <div class="w-full flex flex-col">
-    <h2 class="text-4xl uppercase text-[#b0c4de] font-bold">mitski store</h2>
-  
-    <a href="" class="hover:shadow-md text-center mt-8 uppercase transition duration-300 w-[10rem] text-[#ff6e00] hover:text-black bg-transparent font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-[#ff6e00] focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
-      shop
-    </a>
-  </div>
-  
- 
-
-  <!-- merch -->
-   
-    <ul class="flex gap-4 mt-3 ">
-      <li class="bg-white relative p-4 flex flex-col">
-        <img src="/public/assets/merch/black-tee.png" alt="">
-        <p class="uppercase text-[#ff6e00] font-bold">2024 tour tee</p>
-      </li>
-      <li class="bg-white relative p-4 flex flex-col">
-        <img src="/public/assets/merch/black-cap.png" alt="">
-        <p class="uppercase  text-[#ff6e00] font-bold">listening to mitski hat</p>
-      </li>
-      <li class="bg-white relative p-4 flex flex-col">
-        <img src="/public/assets/merch/black-hoodie.png" alt="">
-        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">2024 tour hoodie</p>
-      </li>
-      <li class="bg-white relative flex flex-col p-4">
-        <img src="/public/assets/merch/pink-tee.png" alt="">
-        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">2024 tour tee(web exclusive)</p>
-      </li>
-      <li class="bg-white relative p-4 flex flex-col">
-        <img src="/public/assets/merch/vinyl.png" alt="">
-        <p class="uppercase absolute bottom-4 text-[#ff6e00] font-bold">the land is inhospitable and so are we vinyl(pink aster)</p>
-      </li>
-    </ul>
-   
-
-   <!-- upcoming tour dates -->
+  <section class="flex flex-col justify-center items-center p-10 bg-black space-y-10">
+    <!-- upcoming tour dates -->
     <div id="tour" class="flex justify-center items-center flex-col w-1/2 space-y-4">
       <h2 class="uppercase text-4xl text-[#b0c4de] font-bold">upcoming tour dates</h2>
       <div class="flex flex-wrap">
         <p class="font-regular text-lg text-center leading-relaxed">
-          Join a waitlist below to receive first notice when more tickets become available. 
+          Join a waitlist below to receive first notice when more tickets become available.
           The Mitski <br> Team is working with show promoters regularly to cancel scalped tickets.
-           Limited Tickets <br> means all face value tickets are sold out.
+          Limited Tickets <br> means all face value tickets are sold out.
         </p>
       </div>
     </div>
 
     <!-- no upcoming events -->
-     <div class="flex  w-full">
+    <div class="flex  w-full">
       <p class="items-start text-lg">There are no upcoming events.</p>
-     </div>
-
-     <!-- hr -->
-      
-      <hr class="border-[#ff6e00] w-full font-bold border-2 rounded-md">
-
-      <!-- get notified -->
-       <div class="w-full flex-col flex items-center justify-center">
-        <h6 class="uppercase text-wrap text-2xl font-bold text-[#b0c4de] items-center text-center">
-          Get notified when new events are <br> announced in your area
-        </h6>
-
-        <a href="" class="text-center hover:shadow-md text-black mt-8 uppercase transition duration-300 w-2/6  hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
-          follow mitski
-        </a>
-       </div>
-</section>
-
-<section class="bg-black w-full flex flex-col justify-center items-center">
-  <div class="w-[95%] h-[95%] p-10 image-container relative">
-    <img src="/public/assets/images/mitski-my_love.png" alt="Mitski - My Love Mine All Mine" class="flex items-center justify-center w-full rounded-xl">
-    <div class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
-       <i class="fa-solid fa-play text-4xl text-black"></i>
-       <!-- <h2 class="uppercase">star</h2> -->
     </div>
-    <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
-      <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">my love mine all mine</h3>
+
+    <!-- hr -->
+
+    <hr class="border-[#ff6e00] w-full font-bold border-2 rounded-md">
+
+    <!-- get notified -->
+    <div class="w-full flex-col flex items-center justify-center">
+      <h6 class="uppercase text-wrap text-2xl font-bold text-[#b0c4de] items-center text-center">
+        Get notified when new events are <br> announced in your area
+      </h6>
+
+      <a href=""
+        class="text-center hover:shadow-md text-black mt-8 uppercase transition duration-300 w-2/6  hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-4 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+        follow mitski
+      </a>
     </div>
-   
-  </div>
-  
-  <a href="" class="text-center items-center mb-6 text-black mt-2 uppercase transition duration-300 w-full sm:w-1/2 md:w-1/4 hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-6 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
-  view more videos
-</a>
+  </section>
 
-</section>
+  <section class="bg-black w-full flex flex-col justify-center items-center">
+    <div class="w-[95%] h-[95%] p-10 image-container relative">
+      <img src="/public/assets/images/mitski-my_love.png" alt="Mitski - My Love Mine All Mine"
+        class="flex items-center justify-center w-full rounded-xl">
+      <div
+        class="play-button absolute top-1/2 left-1/2  bg-[#b0c4de] flex justify-center items-center w-20 h-20 rounded-full transform -translate-y-1/2 -translate-x-1/2">
+        <i class="fa-solid fa-play text-4xl text-black"></i>
+        <!-- <h2 class="uppercase">star</h2> -->
+      </div>
+      <div class="absolute top-[56%] left-1/2 transform -translate-x-1/2">
+        <h3 class="uppercase font-bold text-4xl text-[#b0c4de]">my love mine all mine</h3>
+      </div>
+
+    </div>
+
+    <a href=""
+      class="text-center items-center mb-6 text-black mt-2 uppercase transition duration-300 w-full sm:w-1/2 md:w-1/4 hover:text-[#ff6e00] bg-[#ff6e00] font-bold p-6 border-2 border-[#ff6e00] rounded-md hover:bg-transparent focus:ring-2 focus:ring-[#ff6e00] focus:outline-none">
+      view more videos
+    </a>
+
+  </section>
 
 
-<section class="bg-[#ff6e00] h-screen">
+  <section class="bg-[#ff6e00] h-screen">
 
-</section>
+  </section>
 
-  </body>
+  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
 </html>
