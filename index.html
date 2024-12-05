@@ -339,9 +339,82 @@
   </section>
 
 
-  <section class="bg-[#ff6e00] h-screen">
+  <footer class="bg-[#ff6e00] min-h-screen flex flex-col relative">
+    <div class="p-10">
 
-  </section>
+    
+    <h3 class="uppercase font-semibold text-2xl">newsletter</h3>
+
+    <div class="p-4 mt-4 flex flex-row md:flex:row  gap-8 items-center ">
+  <h4 class="font-bold text-lg md:text-xl text-center md:text-left">Sign Up For Mitski News Notifications</h4>
+  <div class="flex gap-4">
+    <i class="fa-regular fa-message text-2xl md:text-3xl hover:bg-[#C0C0C0] rounded-full p-4 duration-300 transform"></i>
+    <i class="fa-regular fa-envelope text-2xl md:text-3xl hover:bg-[#C0C0C0] rounded-full p-4 duration-300 transform"></i>
+  </div>
+</div>
+
+
+
+    <div class="p-4   relative w-full sm:w-3/4 md:w-1/2 lg:w-3/4 xl:w-4/12">
+  <input 
+    type="number" 
+    class="rounded-full bg-transparent border-black border p-4 w-full pr-24 sm:pr-20"
+  >
+  <button 
+    class="absolute top-1/2 right-6 transform -translate-y-1/2 bg-[#C0C0C0] px-4 sm:px-6 py-2 rounded-full font-bold text-white uppercase"
+  >
+    RSVP
+  </button>
+</div>
+
+<!-- Cup Image -->
+    <div class="hidden lg:block absolute top-0 right-0 sm:top-[2rem] sm:right-[2rem] flex justify-center w-full md:w-auto">
+      <img src="/public/assets/images/cup.png" alt="Cup Image" class="h-[550px] w-auto">
+    </div>
+
+
+
+    <hr class="border-black border-2 rounded-full absolute bottom-24 inset-x-2" >
+
+    <div class="absolute bottom-1  px-4 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10">
+      <ul class="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6">
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-instagram"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-tiktok"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-youtube"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-facebook-f"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-tumblr"></i>
+        </li>
+        <li class="border-2 border-black rounded-lg p-4">
+          <i class="fa-brands fa-spotify"></i>
+        </li>
+      </ul>
+
+
+      
+
+      <div class="gap-10 text-center md:text-right flex flex-row justify-between">
+        <p class="font-bold">&copy; 2024, Mitski</p>
+
+      <p class="font-bold mt-2 md:mt-0 ">Site by Paper Tiger</p>
+      </div>
+      
+    </div>
+
+    </div>
+  </footer>
+  
 
   <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
