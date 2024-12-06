@@ -65,7 +65,26 @@ button.cta:hover {
     overflow: hidden; /* Hide overflowing slides */
 }
 
+.underline-animation{
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
 
+.underline-animation::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s ease-in-out;
+}
+
+.underline-animation:hover::after{
+  width: 75%;
+}
 
 
 

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mitski's Official Website</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="dropdown.js">
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -28,7 +29,20 @@
         <li><a href="">videos</a></li>
         <li><a href="">contact</a></li>
         <li><a href="">sign up</a></li>
-        <li><a href="">follow</a></li>
+        <li>
+          <a href="">follow</a>
+          <i class="fa-solid fa-angle-down text-[#ff6e00] cursor-pointer" id="dropdown"></i>
+
+          <div class="p-2 border-2 border-[#ff6e00] rounded-md relative ">
+            <ul class="bg-black space-y-4 text-white p-4 text-sm uppercase" id="dropdown-content">
+              <li class="uppercase underline-animation">instagram</li>
+              <li class="uppercase underline-animation">twitter</li>
+              <li class="uppercase underline-animation">tiktok</li>
+              <li class="uppercase underline-animation">youtube</li>
+            </ul>
+          </div>
+
+        </li>
       </ul>
 
       <div>
