@@ -1,0 +1,7 @@
+![alt text](hero-section.png)
+![alt text](tracklist.png)
+![alt text](music-video-1.png)
+![alt text](merch.png)
+![alt text](tour.png)
+![alt text](music-video-2.png)
+![alt text](footer.png)
