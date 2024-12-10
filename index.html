@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mitski's Official Website</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="dropdown.js">
+  
   <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -17,7 +17,7 @@
 
 <body>
   <header>
-    <nav class="bg-black fixed top-0 left-0 z-50 w-full flex justify-between  font-bold p-6 text-base ">
+    <nav class="bg-black fixed top-0 left-0 z-50 w-full flex justify-between font-bold p-6 text-base">
       <div>
         <img src="/public/assets/images/logo.png" alt="mitski-logo" />
       </div>
@@ -29,20 +29,31 @@
         <li><a href="">videos</a></li>
         <li><a href="">contact</a></li>
         <li><a href="">sign up</a></li>
-        <li>
-          <a href="">follow</a>
-          <i class="fa-solid fa-angle-down text-[#ff6e00] cursor-pointer" id="dropdown"></i>
+       <li class="relative dropdown">
+  <a href="#">Follow</a>
+  <i class="fa-solid fa-angle-down text-[#ff6e00] cursor-pointer select"></i>
 
-          <div class="p-2 border-2 border-[#ff6e00] rounded-md relative ">
-            <ul class="bg-black space-y-4 text-white p-4 text-sm uppercase" id="dropdown-content">
-              <li class="uppercase underline-animation">instagram</li>
-              <li class="uppercase underline-animation">twitter</li>
-              <li class="uppercase underline-animation">tiktok</li>
-              <li class="uppercase underline-animation">youtube</li>
-            </ul>
-          </div>
+  <div
+    class="menu p-2 border-2 border-[#ff6e00] rounded-md absolute top-full left-0 z-10 bg-black"
+  >
+    <ul class="space-y-4 text-white p-4 text-sm uppercase">
+      <li class="uppercase underline-animation">
+        <a href="#">Instagram</a>
+      </li>
+      <li class="uppercase underline-animation">
+        <a href="#">Twitter</a>
+      </li>
+      <li class="uppercase underline-animation">
+        <a href="#">TikTok</a>
+      </li>
+      <li class="uppercase underline-animation">
+        <a href="#">YouTube</a>
+      </li>
+    </ul>
+  </div>
+</li>
 
-        </li>
+
       </ul>
 
       <div>
@@ -81,8 +92,9 @@
         <h2 class="uppercase text-[#b0c4de] font-bold text-4xl sm:text-3xl text-center sm:text-left">
           tracklist
         </h2>
+        
         <ul class="grid grid-cols-2 gap-6 sm:text-lg text-base">
-          <!-- Left Column -->
+          <!-- Left Column  -->
           <div class="first space-y-4">
             <li>
               <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/45KMdPDdZTxcXW3lw10R70" width="100%"
@@ -116,7 +128,7 @@
             </li>
           </div>
 
-          <!-- Right Column -->
+           <!-- Right Column -->
           <div class="second space-y-4">
             <li>
               <iframe class="rounded-lg" src="https://open.spotify.com/embed/track/3vkCueOmm7xQDoJ17W1Pm3" width="100%"
@@ -158,6 +170,7 @@
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"></iframe></li>
         </ul>
+     
 
 
         <a href="https://mitski.lnk.to/TLIIASAW"
@@ -431,6 +444,7 @@
   
 
   <script src="index.js"></script>
+  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 

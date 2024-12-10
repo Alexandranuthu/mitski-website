@@ -1,12 +1,26 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const dropdown = document.getElementById('dropdown');
-    const options = document.querySelectorAll('.dropdown-content li');
+    const dropdowns = document.querySelectorAll('.dropdown');
 
-    options.forEach(option => {
-        option.addEventListener('click', () => {
-            dropdown.textContent = option.textContent;
+    dropdowns.forEach(dropdown => {
+        const menu = dropdown.querySelector('.menu');
+        const select = dropdown.querySelector('.select');
+        const options = dropdown.querySelectorAll('.menu li');
+
+        select.addEventListener('click', (event) => {
+            event.stopPropagation();
+            menu.classList.toggle('hidden');
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!dropdown.contains(event.target)) {
+                menu.classList.add('hidden');
+            }
         });
     });
-
-    
-})
+});

@@ -19,7 +19,7 @@ section{
     color: white;
 }
 body{
-    /* background-image: url('/public/assets/images/mitski-header.png');  */
+   
   background-repeat: no-repeat; 
   background-size: cover;
 }
@@ -65,30 +65,63 @@ button.cta:hover {
     overflow: hidden; /* Hide overflowing slides */
 }
 
-.underline-animation{
+/* Positioning and styling the dropdown */
+.dropdown {
   position: relative;
-  color: white;
-  text-decoration: none;
 }
 
-.underline-animation::after{
-  content: "";
+.dropdown .menu {
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
+  background: #000; /* Black background for the dropdown */
+  border: 2px solid #ff6e00; /* Orange border */
+  border-radius: 0.375rem; /* Rounded corners */
+  padding: 0.5rem; /* Inner padding */
+  display: none; /* Initially hidden */
+  z-index: 10; /* Ensure it appears above other elements */
+}
+
+/* Dropdown menu links */
+.dropdown .menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; /* Remove bullets */
+}
+
+.dropdown .menu li {
+  padding: 0.5rem 0;
+}
+
+.dropdown .menu li a {
+  text-decoration: none;
+  color: #fff; /* White text */
+  font-size: 0.875rem; /* Small text */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.dropdown:hover .menu {
+  display: block; /* Show the menu on hover */
+}
+
+
+
+.dropdown i {
+  cursor: pointer;
+  margin-left: 0.5rem; /* Space between text and icon */
+  color: #ff6e00; /* Icon color */
+}
+
+/* Animation for underline effect */
+.underline-animation a::after {
+  content: "";
+  display: block;
   width: 0;
   height: 2px;
-  background-color: white;
-  transition: width 0.5s ease-in-out;
+  background: #ff6e00;
+  transition: width 0.3s;
 }
 
-.underline-animation:hover::after{
-  width: 75%;
+.underline-animation a:hover::after {
+  width: 70%; /* Full underline on hover */
 }
-
-
-
-
-
-
-
